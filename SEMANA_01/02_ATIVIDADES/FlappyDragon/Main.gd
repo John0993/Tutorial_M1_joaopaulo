@@ -1,9 +1,9 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
+var status = 1 #Define se o jogo está em andamento ou não. Caso seja definido como '1', o jogo está em andamento. Caso seja definido como '0', o jogo estará parado, e na tela de carregamento
+var vscore = 0 #Define a pontuação do usuário. Aumenta em 1 ponto a cada vez que uma coluna é ultrapassada
+var x = 6 #Define a velocidade do dragão
+var y = 1.5 #Define o deslocamento vertical do dragão 
 
 # executa essa função ao carregar o jogo
 func _ready():
