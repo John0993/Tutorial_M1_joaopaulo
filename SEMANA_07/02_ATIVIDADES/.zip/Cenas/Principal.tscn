@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Script/Principal.gd" type="Script" id=1]
+[ext_resource path="res://Cenas/Luz.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Cenas/Barreira.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Cenas/HUD.tscn" type="PackedScene" id=4]
+
+[node name="Principal" type="Node2D"]
+position = Vector2( -1, 1 )
+script = ExtResource( 1 )
+Barreira = ExtResource( 3 )
+
+[node name="Luz" parent="." instance=ExtResource( 2 )]
+position = Vector2( 512, 544 )
+
+[node name="spawnBarreira" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="aumentarSpeed" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="iniciar" type="Timer" parent="."]
+one_shot = true
+
+[node name="dificultar" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="area_entered" from="Luz" to="." method="_on_Luz_area_entered"]
+[connection signal="body_entered" from="Luz" to="." method="_on_Luz_body_entered"]
+[connection signal="timeout" from="spawnBarreira" to="." method="_on_spawnBarreira_timeout"]
+[connection signal="timeout" from="aumentarSpeed" to="." method="_on_aumentarSpeed_timeout"]
+[connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
+[connection signal="timeout" from="iniciar" to="." method="_on_iniciar_timeout"]
+[connection signal="timeout" from="dificultar" to="." method="_on_dificultar_timeout"]
