@@ -1,35 +1,7 @@
-Para esta semana sua tarefa é criar um jogo baseado num dos seguintes temas:
-
--Desde que tenhamos um ao outro, os problemas nunca acabarão
-
--Decepção
-
--Extinção
-
--Não vemos coisas como elas são, vemos como nós somos.
-
--O que fazemos agora?
-
--Ritual
+Temas escolhidos:
 
 -Ondas
 
--Transmissão
-
--O que casa significa para você?
-
--Reparo
-
--Achados e perdidos
-
 -Dualidade
 
-O jogo deve possuir ao menos:
-
-- Uma tela inicial
-
-- Uma fase jogável
-
-- Uma justificativa/explicação relacionando o tema escolhido e o jogo desenvolvido.
-
-Ao terminar, salve o código fonte de seu jogo na sua pasta do Github e publique-o no seu GitPages.
+Dualight é um jogo baseado na propriedade de dualidade da luz, a qual pode se comportar tanto como onda, quanto como partícula. Assim, no jogo, o player deve alternar entre esses dois estados para passar por obstáculos que somente um dos dois pode atravessar. Para além de um jogo lúdico, Dualight também serve um propósito educativo, já que pode instigar o jogador a conhecer mais sobre esse princípio tão encantador da luz.
